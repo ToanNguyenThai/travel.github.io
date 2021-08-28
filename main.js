@@ -526,3 +526,14 @@ function DOM_Container6() {
     })
 }
 DOM_Container6();
+//Hiển thị NavbarList trên mobile
+var barIcon = document.querySelector('.mobile-bar i')
+var mobileList = document.querySelector('.mobile-list')
+
+barIcon.onclick = function(){
+    if (mobileList.classList.contains("show")){
+        mobileList.classList.remove("show")
+    } else {
+        mobileList.classList.add("show")
+    }
+}   

@@ -6,12 +6,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/icon/css/all.min.css">
+    <link rel="stylesheet" href="/style.css">
+    <title>Let's Travel</title>
+    <!-- slider -->
     <link rel="stylesheet" href="owlcarousel/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="owlcarousel/assets/owl.theme.default.min.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="owlcarousel/owl.carousel.min.js"></script>
-    <link rel="stylesheet" href="/style.css">
-    <title>Let's Travel</title>
+   
+    
+
 </head>
 
 <body>
@@ -19,12 +23,60 @@
         <div class="header-container grid">
             <img src="/img/logo_dark.png" alt="">
             <ul class="header-list">
-                <li class="header-list-item">HOME</li>
-                <li class="header-list-item">HOTELS</li>
-                <li class="header-list-item">FLIGHTS</li>
-                <li class="header-list-item">CARS</li>
-                <li class="header-list-item">CRUISES</li>
-                <li class="header-list-item">PAGES</li>
+                <li class="header-list-item">HOME
+                    <div class="popup-list">
+                        <div class="popup-item">HOME 1</div>
+                        <div class="popup-item">HOME 2</div>
+                        <div class="popup-item">HOME 3</div>
+                        <div class="popup-item">HOME 4</div>
+                        <div class="popup-item">HOME 5</div>
+                    </div>
+                </li>
+                <li class="header-list-item">HOTELS
+                    <div class="popup-list">
+                        <div class="popup-item">HOTELS 1</div>
+                        <div class="popup-item">HOTELS 2</div>
+                        <div class="popup-item">HOTELS 3</div>
+                        <div class="popup-item">HOTELS 4</div>
+                        <div class="popup-item">HOTELS 5</div>
+                    </div>
+                </li>
+                <li class="header-list-item">FLIGHTS
+                    <div class="popup-list">
+                        <div class="popup-item">FLIGHTS 1</div>
+                        <div class="popup-item">FLIGHTS 2</div>
+                        <div class="popup-item">FLIGHTS 3</div>
+                        <div class="popup-item">FLIGHTS 4</div>
+                        <div class="popup-item">FLIGHTS 5</div>
+                    </div>
+                </li>
+                <li class="header-list-item">CARS
+                    <div class="popup-list">
+                        <div class="popup-item">CARS 1</div>
+                        <div class="popup-item">CARS 2</div>
+                        <div class="popup-item">CARS 3</div>
+                        <div class="popup-item">CARS 4</div>
+                        <div class="popup-item">CARS 5</div>
+                    </div>
+                </li>
+                <li class="header-list-item">CRUISES
+                    <div class="popup-list">
+                        <div class="popup-item">CRUISES 1</div>
+                        <div class="popup-item">CRUISES 2</div>
+                        <div class="popup-item">CRUISES 3</div>
+                        <div class="popup-item">CRUISES 4</div>
+                        <div class="popup-item">CRUISES 5</div>
+                    </div>
+                </li>
+                <li class="header-list-item">PAGES
+                    <div class="popup-list">
+                        <div class="popup-item">PAGES 1</div>
+                        <div class="popup-item">PAGES 2</div>
+                        <div class="popup-item">PAGES 3</div>
+                        <div class="popup-item">PAGES 4</div>
+                        <div class="popup-item">PAGES 5</div>
+                    </div>
+                </li>
             </ul>
             <div class="mobile-bar">
                 <i class="fas fa-bars"></i>
@@ -34,7 +86,10 @@
     <div class="container-1">
         <img src="/img/slider.png" alt="">
         <div class="top-tour">
-            <img id="top-tour-img" src="/img/slide_1.png" alt="">
+            <div class="img-slider">
+                <img id="top-tour-img" src="/img/slide_1.png" alt="">
+            </div>
+            
             <div class="information">
                 <div class="line-1">
                     <i class="fas fa-star"></i>
@@ -132,107 +187,111 @@
                 <!-- item1 -->
                 <div class="number-container-item">
                     <i class="far fa-bell"></i>
-                    <h2>0</h2>
+                    <h2 class="counter">0</h2>
                     <div class="separate"></div>
                     <h3>HAPPY CLIENTS</h3>
                 </div>
                 <!-- item2 -->
                 <div class="number-container-item">
                     <i class="fas fa-home"></i>
-                    <h2>0</h2>
+                    <h2 class="counter">0</h2>
                     <div class="separate"></div>
                     <h3>AMAZING TOUR</h3>
                 </div>
                 <!-- item3 -->
                 <div class="number-container-item">
                     <i class="far fa-comment-dots"></i>
-                    <h2>0</h2>
+                    <h2 class="counter">0</h2>
                     <div class="separate"></div>
                     <h3>SUPPORT CASE</h3>
                 </div>
                 <!-- item4 -->
                 <div class="number-container-item">
                     <i class="fas fa-lock"></i>
-                    <h2>0</h2>
+                    <h2 class="counter">0</h2>
                     <div class="separate"></div>
                     <h3>IN BUSINESS</h3>
                 </div>
             </div>
 
         </div>
-
+        
 
     </div>
+   
     <div class="container-5">
         <h1>MOST POPULAR CITY</h1>
         <div class="separate"></div>
         <div class="main-container grid">
-            <div class="main-container-item" id="rome">
-                <div class="img-container">
-                    <img src="/img/city_2.jpg" alt="">
-                    <div class="overlay"></div>
-                    <div class="information">
-                        <h3>ROME</h3>
-                        <div class="separate"></div>
-                        <div class="weather">
-                            <i class="fab fa-mixcloud"></i>
-                            <span> 30 <sup>o</sup> C </span>
+            
+                <div class="main-container-item" id="rome">
+                    <div class="img-container">
+                        <img src="/img/city_2.jpg" alt="">
+                        <div class="overlay"></div>
+                        <div class="information">
+                            <h3>ROME</h3>
+                            <div class="separate"></div>
+                            <div class="weather">
+                                <i class="fab fa-mixcloud"></i>
+                                <span> 30 <sup>o</sup> C </span>
+                            </div>
+    
                         </div>
-
+                    </div>
+                    <div class="control-panel">
+                        <div id="Rome-placesBtn" class="control-panel-options">PLACES</div>
+                        <div id="Rome-dishesBtn" class="control-panel-options">DISHES</div>
+                    </div>
+                    <div class="option-item-container" id="Rome-item">
+    
                     </div>
                 </div>
-                <div class="control-panel">
-                    <div id="Rome-placesBtn" class="control-panel-options">PLACES</div>
-                    <div id="Rome-dishesBtn" class="control-panel-options">DISHES</div>
-                </div>
-                <div class="option-item-container" id="Rome-item">
-
-                </div>
-            </div>
-            <div class="main-container-item" id="paris">
-                <div class="img-container">
-                    <img src="/img/city_3.jpg" alt="">
-                    <div class="overlay"></div>
-                    <div class="information">
-                        <h3>PARIS</h3>
-                        <div class="separate"></div>
-                        <div class="weather">
-                            <i class="fab fa-mixcloud"></i>
-                            <span> 30 <sup>o</sup> C </span>
+                <div class="main-container-item" id="paris">
+                    <div class="img-container">
+                        <img src="/img/city_3.jpg" alt="">
+                        <div class="overlay"></div>
+                        <div class="information">
+                            <h3>PARIS</h3>
+                            <div class="separate"></div>
+                            <div class="weather">
+                                <i class="fab fa-mixcloud"></i>
+                                <span> 30 <sup>o</sup> C </span>
+                            </div>
+    
                         </div>
-
+                    </div>
+                    <div class="control-panel">
+                        <div id="Paris-placesBtn" class="control-panel-options">PLACES</div>
+                        <div id="Paris-dishesBtn" class="control-panel-options">DISHES</div>
+                    </div>
+                    <div class="option-item-container" id="Paris-item">
+    
                     </div>
                 </div>
-                <div class="control-panel">
-                    <div id="Paris-placesBtn" class="control-panel-options">PLACES</div>
-                    <div id="Paris-dishesBtn" class="control-panel-options">DISHES</div>
-                </div>
-                <div class="option-item-container" id="Paris-item">
-
-                </div>
-            </div>
-            <div class="main-container-item" id="venice">
-                <div class="img-container">
-                    <img src="/img/city_1.jpg" alt="">
-                    <div class="overlay"></div>
-                    <div class="information">
-                        <h3>VENICE</h3>
-                        <div class="separate"></div>
-                        <div class="weather">
-                            <i class="fab fa-mixcloud"></i>
-                            <span> 30 <sup>o</sup> C </span>
+                <div class="main-container-item" id="venice">
+                    <div class="img-container">
+                        <img src="/img/city_1.jpg" alt="">
+                        <div class="overlay"></div>
+                        <div class="information">
+                            <h3>VENICE</h3>
+                            <div class="separate"></div>
+                            <div class="weather">
+                                <i class="fab fa-mixcloud"></i>
+                                <span> 30 <sup>o</sup> C </span>
+                            </div>
+    
                         </div>
-
+                    </div>
+                    <div class="control-panel">
+                        <div id="Venice-placesBtn" class="control-panel-options">PLACES</div>
+                        <div id="Venice-dishesBtn" class="control-panel-options">DISHES</div>
+                    </div>
+                    <div class="option-item-container" id="Venice-item">
+    
                     </div>
                 </div>
-                <div class="control-panel">
-                    <div id="Venice-placesBtn" class="control-panel-options">PLACES</div>
-                    <div id="Venice-dishesBtn" class="control-panel-options">DISHES</div>
-                </div>
-                <div class="option-item-container" id="Venice-item">
-
-                </div>
-            </div>
+            
+            
         </div>
     </div>
     <script>
@@ -240,14 +299,18 @@
             $('.owl-carousel').owlCarousel({
                 loop: true,
                 margin: 30,
-                nav: true,
+                responsiveClass:true,
                 responsive: {
-                    992:{
-                        items: 3
+                    0: {
+                        
+                        items: 1    
                     },
-                    1184: {
+                    1000: {
+                        items: 3,
+                    },
+                    1217:{
                         items: 4
-                    } 
+                    }
                 }
             })
         });
@@ -308,13 +371,13 @@
                     <div class="tag-item">Flights</div>
                     <div class="tag-item">Travelling</div>
                     <div class="tag-item">Sales</div>
-                    
+
                     <div class="tag-item">Cruises</div>
                     <div class="tag-item">Cars</div>
                     <div class="tag-item">Hotels</div>
                     <div class="tag-item">Tours</div>
                     <div class="tag-item">Booking</div>
-                    
+
                     <div class="tag-item">Countries</div>
                 </div>
 
@@ -329,7 +392,7 @@
                     <div class="contact-type">
                         <i class="fas fa-phone-alt"></i>
                         <span class="contact-details">+93 123 456 789</span>
-                        
+
                     </div>
                     <div class="contact-type">
                         <i class="far fa-envelope"></i>
@@ -340,7 +403,7 @@
                         <span class="contact-details">let’s_travel@world.com</span>
                     </div>
                 </div>
-               
+
             </div>
         </div>
     </div>
@@ -359,8 +422,18 @@
             </div>
         </div>
     </div>
+    <div class="mobile-list">
+
+        <a href="#">Home</a>
+        <a href="#">Hotel</a>
+        <a href="#">Flights</a>
+        <a href="#">Cars</a>
+        <a href="#">Cruises</a>
+        <a href="#">Pages</a>
+
+    </div>
+    
     <script src="main.js"></script>
-   
 </body>
 
 </html>

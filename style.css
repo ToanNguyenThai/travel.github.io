@@ -45,6 +45,7 @@ header .header-list .header-list-item {
   display: inline-block;
   margin-top: 20px;
   margin-left: 50px;
+  position: relative;
   cursor: pointer;
   font-family: "Open Sans", sans-serif;
   font-weight: 600;
@@ -53,6 +54,49 @@ header .header-list .header-list-item {
 }
 
 header .header-list .header-list-item:hover {
+  color: #ff6600;
+}
+
+header .header-list .header-list-item:hover .popup-list {
+  display: block;
+}
+
+header .header-list .popup-list::before {
+  content: "";
+  width: 200px;
+  height: 50px;
+  top: -40px;
+  position: absolute;
+  display: block;
+  left: 0;
+}
+
+header .header-list .popup-list {
+  display: none;
+  position: absolute;
+  top: 50px;
+  left: -20px;
+  width: 150px;
+  background-color: white;
+  border: solid;
+  border-color: #e8e8e8;
+  border-width: 0.5px;
+  border-top-style: solid;
+  border-top-color: #ff6600;
+  border-top-width: 3px;
+}
+
+header .header-list .popup-list .popup-item {
+  color: black;
+  padding-left: 10px;
+  height: 50px;
+  line-height: 50px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+header .header-list .popup-list .popup-item:hover {
   color: #ff6600;
 }
 
@@ -104,10 +148,16 @@ header .mobile-bar i:hover {
   display: flex;
 }
 
-.container-1 .top-tour img {
+.container-1 .top-tour .img-slider {
   width: calc(947px / 2);
+  height: 554px;
   -webkit-transition: all 2s ease-in;
   transition: all 2s ease-in;
+}
+
+.container-1 .top-tour .img-slider img {
+  width: 100%;
+  height: 100%;
 }
 
 .container-1 .top-tour .information {
@@ -1188,6 +1238,44 @@ header .mobile-bar i:hover {
   color: #ff6600;
 }
 
+.mobile-list {
+  display: none;
+}
+
+.show {
+  z-index: 100;
+  position: fixed;
+  top: 87px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: none;
+  background-color: #ffffff;
+  -webkit-box-shadow: 0 10px 10px #e0e4e6;
+          box-shadow: 0 10px 10px #e0e4e6;
+}
+
+.show a {
+  display: block;
+  cursor: pointer;
+  padding-left: 30px;
+  text-decoration: none;
+  font-family: "Open Sans", sans-serif;
+  font-size: 20px;
+  letter-spacing: 5px;
+  line-height: 100%;
+  color: black;
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  -webkit-transition: all linear 0.3s;
+  transition: all linear 0.3s;
+}
+
+.show a:hover {
+  color: #ff6600;
+}
+
 @media (max-width: 1184px) and (min-width: 900px) {
   .grid {
     max-width: 940px;
@@ -1246,6 +1334,9 @@ header .mobile-bar i:hover {
   header .mobile-bar {
     display: block;
   }
+  .show {
+    display: block;
+  }
   .container-1 {
     width: 100%;
     height: 762px;
@@ -1255,20 +1346,174 @@ header .mobile-bar i:hover {
     height: 100% !important;
   }
   .container-1 .top-tour {
-    width: 100% !important;
-    height: 624px !important;
+    width: 389px !important;
+    height: 654px !important;
     display: block;
+    margin: 0 auto;
+    bottom: 100px;
   }
-  .container-1 .top-tour img {
-    width: 404px !important;
+  .container-1 .top-tour .img-slider {
+    width: 389px !important;
     height: 200px !important;
   }
   .container-1 .top-tour .information {
-    width: 404px !important;
-    height: 425px;
+    width: 389px !important;
+    height: 434px;
   }
   .container-1 .top-tour .information .line-1 {
     margin-top: 0;
+    padding-top: 10px !important;
+  }
+  .container-1 .top-tour .information .name #poconus {
+    margin-top: 10px;
+  }
+  .container-1 .top-tour .information .name #resort {
+    margin-bottom: 10px;
+  }
+  .container-1 .top-tour .information .img-options {
+    margin-top: 20px;
+  }
+  .container-1 .top-tour .information .img-options img {
+    width: 77px !important;
+    height: 77px !important;
+  }
+  .container-2 {
+    height: 1200px !important;
+    width: 404px;
+    margin: 0 auto !important;
+  }
+  .container-2 .container-2-wrap {
+    display: block;
+    top: 0;
+  }
+  .container-2 .container-2-wrap .statement h1,
+  .container-2 .container-2-wrap .statement h3 {
+    text-align: center;
+  }
+  .container-2 .container-2-wrap .continent {
+    width: 404px;
+    height: 950px;
+    display: block;
+  }
+  .container-2 .container-2-wrap .continent .continent-item {
+    width: 404px;
+    height: 156px;
+    position: relative;
+    margin-left: 0 !important;
+  }
+  .container-2 .container-2-wrap .continent .continent-item img {
+    position: absolute;
+    width: 110px !important;
+    height: 110px !important;
+    top: 50%;
+    left: 50%;
+    margin: -50px 0 0 -55px;
+  }
+  .container-2 .container-2-wrap .continent .continent-item p {
+    width: 100%;
+  }
+  .container-3 {
+    height: 2600px;
+  }
+  .container-3 h1 {
+    padding-top: 0;
+  }
+  .container-3 .destination-list {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .container-3 .destination-list .tour-Img {
+    width: 360px;
+  }
+  .container-4 {
+    width: 100%;
+    height: 900px;
+  }
+  .container-4 img {
+    width: 1500px !important;
+    height: 881px !important;
+  }
+  .container-4 .title {
+    top: 60px;
+  }
+  .container-4 .number-container {
+    top: 140px;
+  }
+  .container-4 .number-container .grid {
+    display: block !important;
+  }
+  .container-4 .number-container .grid .number-container-item {
+    margin-top: 20px;
+  }
+  .container-5 {
+    height: 2150px !important;
+  }
+  .container-5 h1 {
+    padding-top: 50px !important;
+  }
+  .container-5 .main-container {
+    margin-top: 50px;
+    display: block;
+  }
+  .container-5 .main-container .main-container-item {
+    width: 404px !important;
+  }
+  .container-5 .main-container .main-container-item .img-container,
+  .container-5 .main-container .main-container-item .control-panel,
+  .container-5 .main-container .main-container-item .option-item-container {
+    width: 404px !important;
+  }
+  .container-5 .main-container #paris,
+  .container-5 .main-container #venice {
+    margin-top: 30px;
+  }
+  .container-6 {
+    height: 670px !important;
+    position: relative;
+  }
+  .container-6 h1 {
+    padding-top: 0 !important;
+  }
+  .container-6 .main-container {
+    position: absolute;
+    top: 150px;
+    left: 50%;
+    margin: 0 0 0 -131.5px;
+  }
+  .container-6 .owl-dots {
+    width: 263px;
+  }
+  .container-7 {
+    height: 1100px !important;
+  }
+  .container-7 .main-container {
+    display: block;
+  }
+  .container-7 .main-container .main-container-item {
+    padding-top: 30px !important;
+  }
+  .container-7 .main-container .main-container-item h3 {
+    text-align: center;
+  }
+  .container-7 .main-container .item-2,
+  .container-7 .main-container .item-3,
+  .container-7 .main-container .item-4 {
+    padding-left: 0;
+  }
+  .footer {
+    height: 121px !important;
+  }
+  .footer .footer-container {
+    display: block;
+  }
+  .footer .footer-container .footer-list {
+    padding-left: 0;
+  }
+  .footer .footer-container .footer-list .footer-list-item {
+    margin-left: 0 !important;
+    line-height: 0 !important;
+    margin-left: 5px !important;
   }
 }
 /*# sourceMappingURL=style.css.map */
