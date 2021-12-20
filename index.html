@@ -19,7 +19,7 @@
 </head>
 
 <body>
-    <header>
+    <div class = "header">
         <div class="header-container grid">
             <img src="/img/logo_dark.png" alt="">
             <ul class="header-list">
@@ -82,7 +82,7 @@
                 <i class="fas fa-bars"></i>
             </div>
         </div>
-    </header>
+    </div>
     <div class="container-1">
         <img src="/img/slider.png" alt="">
         <div class="top-tour">
@@ -297,6 +297,9 @@
     <script>
         $(document).ready(function () {
             $('.owl-carousel').owlCarousel({
+                autoplay:true,
+                autoplayTimeout:2000,
+                autoplayHoverPause:true,
                 loop: true,
                 margin: 30,
                 responsiveClass:true,

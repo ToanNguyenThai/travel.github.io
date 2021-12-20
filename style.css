@@ -13,7 +13,7 @@ body {
   margin: 0 auto;
 }
 
-header {
+.header {
   z-index: 100;
   position: fixed;
   top: 0;
@@ -23,7 +23,7 @@ header {
   background-color: white;
 }
 
-header .header-container {
+.header .header-container {
   height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -33,14 +33,14 @@ header .header-container {
           justify-content: space-between;
 }
 
-header img {
+.header img {
   width: 215px;
   height: 37px;
   margin-top: 23px;
   cursor: pointer;
 }
 
-header .header-list .header-list-item {
+.header .header-list .header-list-item {
   list-style: none;
   display: inline-block;
   margin-top: 20px;
@@ -53,15 +53,15 @@ header .header-list .header-list-item {
   color: black;
 }
 
-header .header-list .header-list-item:hover {
+.header .header-list .header-list-item:hover {
   color: #ff6600;
 }
 
-header .header-list .header-list-item:hover .popup-list {
+.header .header-list .header-list-item:hover .popup-list {
   display: block;
 }
 
-header .header-list .popup-list::before {
+.header .header-list .popup-list::before {
   content: "";
   width: 200px;
   height: 50px;
@@ -71,7 +71,7 @@ header .header-list .popup-list::before {
   left: 0;
 }
 
-header .header-list .popup-list {
+.header .header-list .popup-list {
   display: none;
   position: absolute;
   top: 50px;
@@ -86,7 +86,7 @@ header .header-list .popup-list {
   border-top-width: 3px;
 }
 
-header .header-list .popup-list .popup-item {
+.header .header-list .popup-list .popup-item {
   color: black;
   padding-left: 10px;
   height: 50px;
@@ -96,21 +96,21 @@ header .header-list .popup-list .popup-item {
   font-weight: 400;
 }
 
-header .header-list .popup-list .popup-item:hover {
+.header .header-list .popup-list .popup-item:hover {
   color: #ff6600;
 }
 
-header .mobile-bar {
+.header .mobile-bar {
   display: none;
 }
 
-header .mobile-bar i {
+.header .mobile-bar i {
   font-size: 30px;
   line-height: 87px;
   cursor: pointer;
 }
 
-header .mobile-bar i:hover {
+.header .mobile-bar i:hover {
   -webkit-animation: iconRotate;
           animation: iconRotate;
   -webkit-animation-duration: 0.6s;
@@ -442,7 +442,6 @@ header .mobile-bar i:hover {
 
 .container-3 .destination-list .destination-list-item .img-container {
   height: 242px;
-  background-color: #ff6600;
   position: relative;
 }
 
@@ -1319,19 +1318,19 @@ header .mobile-bar i:hover {
   }
 }
 
-@media (max-width: 460px) {
+@media (max-width: 420px) {
   .grid {
-    max-width: 404px;
-    width: 100%;
+    max-width: 320px !important;
+    width: 100% !important;
     margin: 0 auto;
   }
-  header {
-    width: 450px !important;
+  .header {
+    width: 100% !important;
   }
-  header .header-list {
+  .header .header-list {
     display: none;
   }
-  header .mobile-bar {
+  .header .mobile-bar {
     display: block;
   }
   .show {
@@ -1344,21 +1343,22 @@ header .mobile-bar i:hover {
   .container-1 img {
     width: 100% !important;
     height: 100% !important;
+    margin: 0 auto;
   }
   .container-1 .top-tour {
-    width: 389px !important;
+    width: 320px !important;
     height: 654px !important;
     display: block;
     margin: 0 auto;
     bottom: 100px;
   }
   .container-1 .top-tour .img-slider {
-    width: 389px !important;
+    width: 320px !important;
     height: 200px !important;
   }
   .container-1 .top-tour .information {
-    width: 389px !important;
-    height: 434px;
+    width: 320px !important;
+    height: 450px;
   }
   .container-1 .top-tour .information .line-1 {
     margin-top: 0;
@@ -1379,24 +1379,26 @@ header .mobile-bar i:hover {
   }
   .container-2 {
     height: 1200px !important;
-    width: 404px;
+    width: 100%;
     margin: 0 auto !important;
   }
   .container-2 .container-2-wrap {
     display: block;
-    top: 0;
+    top: 30px;
   }
   .container-2 .container-2-wrap .statement h1,
   .container-2 .container-2-wrap .statement h3 {
     text-align: center;
   }
   .container-2 .container-2-wrap .continent {
-    width: 404px;
+    max-width: 350px !important;
+    width: 100% !important;
     height: 950px;
     display: block;
   }
   .container-2 .container-2-wrap .continent .continent-item {
-    width: 404px;
+    max-width: 350px !important;
+    width: 100% !important;
     height: 156px;
     position: relative;
     margin-left: 0 !important;
@@ -1407,24 +1409,30 @@ header .mobile-bar i:hover {
     height: 110px !important;
     top: 50%;
     left: 50%;
-    margin: -50px 0 0 -55px;
+    margin: -40px 0 0 -55px;
   }
   .container-2 .container-2-wrap .continent .continent-item p {
     width: 100%;
   }
   .container-3 {
-    height: 2600px;
+    height: 2300px;
   }
   .container-3 h1 {
-    padding-top: 0;
+    padding-top: 30px;
   }
   .container-3 .destination-list {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
   }
-  .container-3 .destination-list .tour-Img {
-    width: 360px;
+  .container-3 .destination-list .destination-list-item {
+    height: 320px !important;
+  }
+  .container-3 .destination-list .destination-list-item .img-container {
+    height: 200px !important;
+  }
+  .container-3 .destination-list .destination-list-item .img-container .tour-Img {
+    width: 320px;
   }
   .container-4 {
     width: 100%;
@@ -1436,6 +1444,8 @@ header .mobile-bar i:hover {
   }
   .container-4 .title {
     top: 60px;
+    padding-left: 15px;
+    padding-right: 15px;
   }
   .container-4 .number-container {
     top: 140px;
@@ -1450,19 +1460,24 @@ header .mobile-bar i:hover {
     height: 2150px !important;
   }
   .container-5 h1 {
-    padding-top: 50px !important;
+    padding-top: 30px !important;
   }
   .container-5 .main-container {
     margin-top: 50px;
     display: block;
+    max-width: 420px !important;
+    width: 100% !important;
   }
   .container-5 .main-container .main-container-item {
-    width: 404px !important;
+    max-width: 350px !important;
+    width: 100% !important;
+    margin: 0 auto;
   }
   .container-5 .main-container .main-container-item .img-container,
   .container-5 .main-container .main-container-item .control-panel,
   .container-5 .main-container .main-container-item .option-item-container {
-    width: 404px !important;
+    max-width: 350px !important;
+    width: 100% !important;
   }
   .container-5 .main-container #paris,
   .container-5 .main-container #venice {
@@ -1473,11 +1488,11 @@ header .mobile-bar i:hover {
     position: relative;
   }
   .container-6 h1 {
-    padding-top: 0 !important;
+    padding-top: 30px !important;
   }
   .container-6 .main-container {
     position: absolute;
-    top: 150px;
+    top: 180px;
     left: 50%;
     margin: 0 0 0 -131.5px;
   }

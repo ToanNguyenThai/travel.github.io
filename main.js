@@ -84,7 +84,8 @@ function Loader_container3() {
 window.addEventListener("DOMContentLoaded", function () {
     Loader_container3();
 })
-
+var tourname = document.querySelector(".tour-Name");
+console.log(tourname);
 //Load dữ liệu ở container-5
 
 function DOM_container5() {

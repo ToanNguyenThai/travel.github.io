@@ -11,7 +11,7 @@ body {
 }
 $main-font: Roboto;
 $main-color: #ff6600;
-header {
+.header {
     z-index: 100;
     position: fixed;
     top: 0;
@@ -366,7 +366,6 @@ header {
             background-color: #ffffff;
             .img-container {
                 height: 242px;
-                background-color: $main-color;
                 position: relative;
                 img {
                     position: absolute;
@@ -1141,14 +1140,14 @@ header {
         }
     }
 }
-@media (max-width: 460px) {
+@media (max-width: 420px) {
     .grid {
-        max-width: 404px;
-        width: 100%;
+        max-width: 320px !important;
+        width: 100% !important;
         margin: 0 auto;
     }
-    header {
-        width: 450px !important;
+    .header {
+        width: 100% !important; 
         .header-list {
             display: none;
         }
@@ -1165,20 +1164,21 @@ header {
         img {
             width: 100% !important;
             height: 100% !important;
+            margin: 0 auto;
         }
         .top-tour {
-            width: 389px !important;
+            width: 320px !important;
             height: 654px !important;
             display: block;
             margin: 0 auto;
             bottom: 100px;
             .img-slider {
-                width: 389px !important;
+                width: 320px !important;
                 height: 200px !important;
             }
             .information {
-                width: 389px !important;
-                height: 434px;
+                width: 320px !important;
+                height: 450px;
                 .line-1 {
                     margin-top: 0;
                     padding-top: 10px !important;
@@ -1203,11 +1203,11 @@ header {
     }
     .container-2 {
         height: 1200px !important;
-        width: 404px;
+        width: 100%;
         margin: 0 auto !important;
         .container-2-wrap {
             display: block;
-            top: 0;
+            top: 30px;
             .statement {
                 h1,
                 h3 {
@@ -1215,21 +1215,24 @@ header {
                 }
             }
             .continent {
-                width: 404px;
+                max-width: 350px !important;
+                width: 100% !important;
                 height: 950px;
                 display: block;
                 .continent-item {
-                    width: 404px;
+                    max-width: 350px !important;
+                    width: 100% !important;
                     height: 156px;
                     position: relative;
                     margin-left: 0 !important;
+                    
                     img {
                         position: absolute;
                         width: 110px !important;
                         height: 110px !important;
                         top: 50%;
                         left: 50%;
-                        margin: -50px 0 0 -55px;
+                        margin: -40px 0 0 -55px;
                     }
                     p {
                         width: 100%;
@@ -1239,15 +1242,23 @@ header {
         }
     }
     .container-3 {
-        height: 2600px;
+        height: 2300px;
         h1 {
-            padding-top: 0;
+            padding-top: 30px;
         }
         .destination-list {
             justify-content: center;
-            .tour-Img {
-                width: 360px;
+            .destination-list-item{
+                height: 320px !important;
+                .img-container{
+                    height: 200px !important;
+                    .tour-Img {
+                        width: 320px;
+                    }
+                }
             }
+            
+           
         }
     }
     .container-4 {
@@ -1259,6 +1270,8 @@ header {
         }
         .title {
             top: 60px;
+            padding-left: 15px;
+            padding-right: 15px;
         }
         .number-container {
             top: 140px;
@@ -1273,17 +1286,23 @@ header {
     .container-5 {
         height: 2150px !important;
         h1 {
-            padding-top: 50px !important;
+            padding-top: 30px !important;
         }
         .main-container {
+            
             margin-top: 50px;
             display: block;
+            max-width: 420px !important;
+            width: 100% !important;
             .main-container-item {
-                width: 404px !important;
+                max-width: 350px !important;
+                width: 100% !important;
+                margin: 0 auto;
                 .img-container,
                 .control-panel,
                 .option-item-container {
-                    width: 404px !important;
+                    max-width: 350px !important;
+                    width: 100% !important;
                 }
             }
             #paris,
@@ -1295,12 +1314,12 @@ header {
     .container-6 {
         height: 670px !important;
         h1 {
-            padding-top: 0 !important;
+            padding-top: 30px !important;
         }
         position: relative;
         .main-container {
             position: absolute;
-            top: 150px;
+            top: 180px;
             left: 50%;
             margin: 0 0 0 -131.5px;
         }
